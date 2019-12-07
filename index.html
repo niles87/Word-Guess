@@ -8,36 +8,48 @@
     <title>90s alt rock!</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="Word-Guess/assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
     <div class="jumbotron">
         <h1>90s Alt Rock</h1>
-        <br>
-        <h2>Band Names</h2>
+        <h2>Word Guess</h2>
     </div>
     <div class="container">
             <div class="row">
-                <div class="span4"><img src="https://picsum.photos/200" alt=""></div>
-                <div class="span8">
+                <div class="col-6"><img src="assets/images/hangman.jpeg" alt="hangman"></div>
+                <div class="col-6">
                     <div class="row">
-                        <div class="span4"><img src="https://picsum.photos/200" alt=""></div>
-                        <div class="span4"><img src="https://picsum.photos/200" alt=""></div>
+                        <div class="col-6">
+                            <h3>Press a key to start your guesses!</h3>
+                            <br>
+                            <h4>
+                                Wins <br> <span>0</span>
+                            </h4>
+                        </div>
                     </div>
                     <div class="row">
-                        <div class="span4"><img src="https://picsum.photos/200" alt=""></div>
-                        <div class="span4"><img src="https://picsum.photos/200" alt=""></div>
+                        <div class="col-6">
+                            <h4>
+                                Guesses Remaining <br> <span id="guessCount">0</span>
+                            </h4>
+                            <h4>
+                                Current Word <br> <span id="word">_</span>
+                            </h4>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="span4"><img src="https://picsum.photos/200" alt=""></div>
-                <div class="span4"><img src="https://picsum.photos/200" alt=""></div>
-                <div class="span4"><img src="https://picsum.photos/200" alt=""></div>
+                <div class="col-12">
+                    <h4>
+                        Letters Guessed <br> <span id="letterGuess">NONE</span>
+                    </h4>
+                </div>
             </div>
         </div>
 </body>
-<script src="Word-Guess/assets/javascript/game.js"></script>
+<script src="assets/javascript/game.js"></script>
 
 </html>
