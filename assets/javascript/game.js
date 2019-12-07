@@ -4,17 +4,25 @@ var userWins = 0;
 
 var guessCount = 0;
 
-document.onkeypress = function (event) {
-    var wordPossibilites = choices[Math.floor(Math.random() * choices.length)];
+var blankWord = " _ "
 
-    var guessCount = (wordPossibilites.length * 1.5);
+document.onkeyup = function (event) {
 
-    document.findElementById("guessCount").innerHTML = guessCount;
+    var userInput = event.key.toLowerCase();
+    console.log(userInput);
+    var wordPossibilites = choices[Math.floor(Math.random() * (choices.length - 1))];
+    console.log(wordPossibilites);
+    guessCount = Math.floor(wordPossibilites.length * 1.5);
+    console.log(guessCount);
 
-    document.onkeypress = function (event) {
+    document.getElementById("guessCount").innerHTML = guessCount;
 
-        var userInput = event.key;
+    document.getElementById("word").innerHTML = blankWord.repeat(wordPossibilites.length - 1);
+
+   
+
+   
 
 
-    }
+
 }
