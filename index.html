@@ -8,6 +8,7 @@
     <title>90s alt rock!</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
@@ -17,38 +18,41 @@
         <h2>Word Guess</h2>
     </div>
     <div class="container">
-            <div class="row">
-                <div class="col-4"><img src="assets/images/hangman.jpeg" alt="hangman"></div>
-                <div class="col-8">
-                    <div class="row">
-                        <div class="col-8">
-                            <h3>Press a key to start your guesses!</h3>
-                            <br>
-                            <h4>
-                                Wins <br> <span id="wins">0</span>
-                            </h4>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-8">
-                            <h4>
-                                Guesses Remaining <br> <span id="guessCount">0</span>
-                            </h4>
-                            <h4>
-                                Current Word <br> <span id="word">_</span>
-                            </h4>
-                        </div>
+        <div class="row">
+            <div class="col-4">
+                <img src="assets/images/hangman.jpeg" alt="hangman" id="image">
+                <audio src="" type="audio/mp3" id="audio" autoplay></audio>
+            </div>
+            <div class="col-8">
+                <div class="row">
+                    <div class="col-8">
+                        <h3>Press a key to start your guesses!</h3>
+                        <br>
+                        <h4>
+                            Wins <br> <span id="wins">0</span>
+                        </h4>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <h4>
-                        Letters Guessed <br> <span id="letterGuess"></span>
-                    </h4>
+                <div class="row">
+                    <div class="col-8">
+                        <h4>
+                            Guesses Remaining <br> <span id="guessCount">0</span>
+                        </h4>
+                        <h4>
+                            Current Word <br> <span id="word">_</span>
+                        </h4>
+                    </div>
                 </div>
             </div>
         </div>
+        <div class="row">
+            <div class="col-12">
+                <h4>
+                    Letters Guessed <br> <span id="letterGuess"></span>
+                </h4>
+            </div>
+        </div>
+    </div>
 </body>
 <script src="assets/javascript/game.js"></script>
 
