@@ -7,7 +7,15 @@ img {
 }
 h1{
     font-family: 'Press Start 2P', cursive;
+    color: #89aee1;
 }
 h2 {
     font-family: 'Press Start 2P', cursive;
+    color: #9effb8;
+}
+h3 {
+    font-family: 'Cherry Bomb', cursive;
+}
+h4 {
+    font-family: 'Cherry Cream Soda', cursive;
 }
