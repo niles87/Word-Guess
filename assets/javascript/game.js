@@ -4,8 +4,6 @@ var choices = ["the cranberries", "soundgarden", "radiohead", "oasis", "nirvana"
 var userWins = 0;
 // used to store total guess allowed
 var guessCount = 0;
-// used to set the possible word to blanks
-var blankWord = "_";
 // word to be guessed
 var currentWord = [];
 // guessed letters
@@ -75,24 +73,24 @@ function checkForLetter(letter) {
             console.log("Thats correct guess again!");
             if (guesses[i] === letter) {
                 console.log("im hitting")
-                updateDisplay();
+                
             } else {
                 console.log("i missed the if")
                 guesses.push(letter);
-                updateDisplay();
+                
             }
         }
     }
+
     // if statement for missed guess
     if (!foundLetter) {
         console.log("Thats not correct try again!")
         if (!guesses.includes(letter)) {
             guesses.push(letter);
             guessCount -= 1;
-            updateDisplay()
         }
     }
-    
+    updateDisplay();
     winOrLose();
 }
 
