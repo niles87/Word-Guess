@@ -23,7 +23,7 @@ document.onkeyup = function (event) {
 
 // make sure a letter is used
 function isAlpha(ch) {
-    return typeof ch === "string" && /[a-z]/.test(ch);
+    return /^[a-z]$/i.test(ch);
 }
 // updates the window
 function updateDisplay() {
