@@ -76,8 +76,6 @@ function checkForLetter(letter) {
                 
             } else {
                 console.log("i missed the if")
-                guesses.push(letter);
-                
             }
         }
     }
@@ -86,10 +84,10 @@ function checkForLetter(letter) {
     if (!foundLetter) {
         console.log("Thats not correct try again!")
         if (!guesses.includes(letter)) {
-            guesses.push(letter);
             guessCount -= 1;
         }
     }
+    guesses.push(letter);
     updateDisplay();
     winOrLose();
 }
