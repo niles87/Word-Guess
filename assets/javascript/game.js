@@ -71,23 +71,17 @@ function checkForLetter(letter) {
             currentWord[i] = letter;
             foundLetter = true;
             console.log("Thats correct guess again!");
-            if (guesses[i] === letter) {
-                console.log("im hitting")
-                
-            } else {
-                console.log("i missed the if")
-            }
         }
     }
 
     // if statement for missed guess
-    if (!foundLetter) {
-        console.log("Thats not correct try again!")
-        if (!guesses.includes(letter)) {
+    if (!guesses.includes(letter)) {
+        if (!foundLetter) {
+            console.log("Thats not correct try again!")
             guessCount -= 1;
         }
+        guesses.push(letter);
     }
-    guesses.push(letter);
     updateDisplay();
     winOrLose();
 }
@@ -102,7 +96,7 @@ function winOrLose() {
         pauseGame = true;
         console.log("You won!");
         updateDisplay();
-        
+
         if (wordPossibilites === choices[0]) {
             img.src = "assets/images/cranberries.jpeg"
             audio.src = "assets/images/The-Cranberries-Zombie.mp3"
@@ -142,5 +136,5 @@ function winOrLose() {
         console.log("you lost try again");
         resetGame();
     }
-    
+
 }
