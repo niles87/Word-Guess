@@ -1,21 +1,20 @@
 body {
-    background-color: #a29a9a;
+  background-color: #a29a9a;
 }
 img {
-    width: 80%;
-    padding: 5px
+  width: 80%;
+  padding: 5px;
 }
-h1{
-    font-family: 'Press Start 2P', cursive;
-    color: #89aee1;
+h1 {
+  font-family: "Press Start 2P", cursive;
+  color: #89aee1;
 }
 h2 {
-    font-family: 'Press Start 2P', cursive;
-    color: #9effb8;
+  font-family: "Press Start 2P", cursive;
 }
 h3 {
-    font-family: 'Cherry Bomb', cursive;
+  font-family: "Cherry Bomb", cursive;
 }
 h4 {
-    font-family: 'Cherry Cream Soda', cursive;
+  font-family: "Cherry Cream Soda", cursive;
 }
