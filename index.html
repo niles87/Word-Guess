@@ -1,60 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>90s alt rock!</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Cherry+Bomb|Cherry+Cream+Soda|Press+Start+2P&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Cherry+Bomb|Cherry+Cream+Soda|Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
 
-<body>
-    <div class="jumbotron">
-        <h1>90s Alt Rock</h1>
-        <h2>Word Guess</h2>
+  <body>
+    <div class="jumbotron bg-secondary">
+      <h1 class="text-center">90s Alt Rock</h1>
+      <h2 class="text-center">Word Guess</h2>
     </div>
     <div class="container">
-        <div class="row">
-            <div class="col-4">
-                <img src="assets/images/hangman.jpeg" alt="hangman" id="image">
-                <audio src="" type="audio/mp3" id="audio" autoplay></audio>
-            </div>
-            <div class="col-8">
-                <div class="row">
-                    <div class="col-8">
-                        <h3>Press a key to start your guesses!</h3>
-                        <br>
-                        <h4>
-                            Wins <br> <span id="wins">0</span>
-                        </h4>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-8">
-                        <h4>
-                            Guesses Remaining <br> <span id="guessCount">0</span>
-                        </h4>
-                        <h4>
-                            Current Word <br> <span id="word">_</span>
-                        </h4>
-                    </div>
-                </div>
-            </div>
+      <div class="row">
+        <div class="col-12 col-sm-4 text-center">
+          <img src="assets/images/hangman.jpeg" alt="hangman" class="img-fluid" id="image" />
+          <audio src="" type="audio/mp3" id="audio" autoplay></audio>
         </div>
-        <div class="row">
+        <div class="col-12 col-sm-8 text-right">
+          <div class="row">
             <div class="col-12">
-                <h4>
-                    Letters Guessed <br> <span id="letterGuess"></span>
-                </h4>
+              <h3>Press a key to start your guesses!</h3>
+              <br />
+              <h4>
+                Wins <br />
+                <span id="wins">0</span>
+              </h4>
             </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <h4>
+                Guesses Remaining <br />
+                <span id="guessCount">0</span>
+              </h4>
+              <h4>
+                Current Word <br />
+                <span id="word">_</span>
+              </h4>
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="row mt-2">
+        <div class="col-12">
+          <h4 class="text-center">
+            Letters Guessed <br />
+            <span id="letterGuess"></span>
+          </h4>
+        </div>
+      </div>
     </div>
-</body>
-<script src="assets/javascript/game.js"></script>
-
+  </body>
+  <script src="assets/javascript/game.js"></script>
 </html>
