@@ -1,9 +1,5 @@
 body {
-  background-color: #a29a9a;
-}
-img {
-  width: 80%;
-  padding: 5px;
+  background-color: #f8f9fa;
 }
 h1 {
   font-family: "Press Start 2P", cursive;
@@ -17,4 +13,7 @@ h3 {
 }
 h4 {
   font-family: "Cherry Cream Soda", cursive;
+}
+.jumbotron {
+  border-radius: 0%;
 }
